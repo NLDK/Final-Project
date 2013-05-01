@@ -17,6 +17,7 @@
 		1F02973A1722921000496F4C /* AppLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F0297391722921000496F4C /* AppLogo.png */; };
 		1F02973D1722948A00496F4C /* AddRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F02973C1722948A00496F4C /* AddRecordViewController.m */; };
 		1F10F12D17223F3300B45B99 /* search_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F10F12C17223F3300B45B99 /* search_button.png */; };
+		1F2DDB711731CBF400DCB263 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F2DDB701731CBF400DCB263 /* Storyboard.storyboard */; };
 		1F3290AF172232360095E673 /* Listochem.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F3290AE172232360095E673 /* Listochem.png */; };
 		1F56799E1718BCDF005F703E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F56799D1718BCDF005F703E /* UIKit.framework */; };
 		1F5679A01718BCDF005F703E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F56799F1718BCDF005F703E /* Foundation.framework */; };
@@ -27,7 +28,6 @@
 		1F5679B01718BCE0005F703E /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F5679AF1718BCE0005F703E /* Default.png */; };
 		1F5679B21718BCE0005F703E /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F5679B11718BCE0005F703E /* Default@2x.png */; };
 		1F5679B41718BCE0005F703E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F5679B31718BCE0005F703E /* Default-568h@2x.png */; };
-		1F5679BB1718BCFB005F703E /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F5679BA1718BCFB005F703E /* Storyboard.storyboard */; };
 		1F5679BD1718C313005F703E /* Antibody_IgG2.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F5679BC1718C313005F703E /* Antibody_IgG2.png */; };
 		1F63CF341722352900AB0550 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F63CF331722352900AB0550 /* HomeViewController.m */; };
 		1F63CF3617223B3900AB0550 /* MagnifyingGlass.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F63CF3517223B3900AB0550 /* MagnifyingGlass.png */; };
@@ -50,6 +50,7 @@
 		1F02973B1722948A00496F4C /* AddRecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddRecordViewController.h; sourceTree = "<group>"; };
 		1F02973C1722948A00496F4C /* AddRecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddRecordViewController.m; sourceTree = "<group>"; };
 		1F10F12C17223F3300B45B99 /* search_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = search_button.png; sourceTree = "<group>"; };
+		1F2DDB701731CBF400DCB263 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = SOURCE_ROOT; };
 		1F3290AE172232360095E673 /* Listochem.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Listochem.png; sourceTree = "<group>"; };
 		1F56799A1718BCDF005F703E /* FinalProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinalProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F56799D1718BCDF005F703E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -64,7 +65,6 @@
 		1F5679AF1718BCE0005F703E /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		1F5679B11718BCE0005F703E /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		1F5679B31718BCE0005F703E /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		1F5679BA1718BCFB005F703E /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Storyboard.storyboard; path = ../Storyboard.storyboard; sourceTree = "<group>"; };
 		1F5679BC1718C313005F703E /* Antibody_IgG2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Antibody_IgG2.png; sourceTree = "<group>"; };
 		1F63CF321722352900AB0550 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		1F63CF331722352900AB0550 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
@@ -130,7 +130,7 @@
 				1F02973C1722948A00496F4C /* AddRecordViewController.m */,
 				1F02972F17227E7000496F4C /* AntibodyDetailViewController.h */,
 				1F02973017227E7000496F4C /* AntibodyDetailViewController.m */,
-				1F5679BA1718BCFB005F703E /* Storyboard.storyboard */,
+				1F2DDB701731CBF400DCB263 /* Storyboard.storyboard */,
 				1F5679A41718BCDF005F703E /* Supporting Files */,
 			);
 			path = FinalProject;
@@ -214,7 +214,6 @@
 				1F5679B01718BCE0005F703E /* Default.png in Resources */,
 				1F5679B21718BCE0005F703E /* Default@2x.png in Resources */,
 				1F5679B41718BCE0005F703E /* Default-568h@2x.png in Resources */,
-				1F5679BB1718BCFB005F703E /* Storyboard.storyboard in Resources */,
 				1F5679BD1718C313005F703E /* Antibody_IgG2.png in Resources */,
 				1F3290AF172232360095E673 /* Listochem.png in Resources */,
 				1F63CF3617223B3900AB0550 /* MagnifyingGlass.png in Resources */,
@@ -224,6 +223,7 @@
 				1F0297361722883100496F4C /* MyLabButton.png in Resources */,
 				1F0297381722903600496F4C /* Logo2.png in Resources */,
 				1F02973A1722921000496F4C /* AppLogo.png in Resources */,
+				1F2DDB711731CBF400DCB263 /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
