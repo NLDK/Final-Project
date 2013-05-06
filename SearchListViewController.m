@@ -7,12 +7,13 @@
 //
 
 #import "SearchListViewController.h"
-
-@interface SearchListViewController ()
-
-@end
+#import "AppDelegate.h"
+#import "Record.h"
+#import "SearchCell.h"
 
 @implementation SearchListViewController
+
+@synthesize workingDatabase;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -26,6 +27,9 @@
 -(void) viewWillAppear:(BOOL)animated
 {
     self.navigationController.navigationBarHidden = NO;
+    
+    AppDelegate *delegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    self.workingDatabase = delegate.DataBase;
 }
 
 - (void)viewDidLoad
@@ -49,24 +53,40 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-#warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-#warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 0;
+    //return self.workingDatabase.count; This was causing an error for some reason, not too sure
+    return 1; //using 1 just for debugging
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    
+    static NSString *CellIdentifier = @"InfoCell";
+    SearchCell *cell = (SearchCell *)[tableView dequeueReusableCellWithIdentifier: CellIdentifier];
+    NSLog(@"%@",cell);
+    /*
+    if(cell == nil)
+    {
+        cell = [[SearchCell alloc] init];
+    }*/
     
     // Configure the cell...
+    Record *record = [self.workingDatabase objectAtIndex:indexPath.row];
+    
+    //set the content
+    cell.myName.text = record.ABName;
+    NSLog(@"%@", record.ABName);
+    cell.myTarget.text = record.ABTarget;
+    cell.myVendor.text = record.ABVendor;
+    cell.myCatNumber.text = record.ABCatNumber;
+    cell.myClonality.text = record.ABClonality;
+    cell.myOrganism.text = record.ABSourceOrg;
     
     return cell;
 }

@@ -7,11 +7,18 @@
 //
 
 #import "AppDelegate.h"
+#import "DBCreator.h"
 
 @implementation AppDelegate
 
+@synthesize DataBase;
+@synthesize MyLab;
+@synthesize RefinedDataBase;
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    DBCreator *temp = [[DBCreator alloc] init];
+    [temp makeDataBase];
     return YES;
 }
 

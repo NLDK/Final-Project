@@ -9,7 +9,17 @@
 #import <UIKit/UIKit.h>
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
-
+{
+        //This is the database.
+        NSMutableArray *DataBase;
+        //This is the MyLab database
+        NSMutableArray *MyLab;
+        //This is the refined database. This is the working database for the app most of the time
+        NSMutableArray *RefinedDataBase;
+}
 @property (strong, nonatomic) UIWindow *window;
+@property (strong, nonatomic) NSMutableArray *DataBase;
+@property (strong, nonatomic) NSMutableArray *MyLab;
+@property (strong, nonatomic) NSMutableArray *RefinedDataBase;
 
 @end

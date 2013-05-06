@@ -7,6 +7,7 @@
 //
 
 #import "HomeViewController.h"
+#import "DBHandler.h"
 
 @interface HomeViewController ()
 
@@ -21,6 +22,22 @@
         // Custom initialization
     }
     return self;
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    // Make sure your segue name in storyboard is the same as this line
+    if ([[segue identifier] isEqualToString:@"Search"])
+    {
+        DBHandler *handler = [[DBHandler alloc]init];
+        //[handler search:0 andInput:<#(NSString *)#>];
+        
+        // Get reference to the destination view controller
+        //YourViewController *vc = [segue destinationViewController];
+        
+        // Pass any objects to the view controller here, like...
+        //[vc setMyObjectHere:object];
+    }
 }
 
 - (void)viewDidLoad
